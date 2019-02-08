@@ -1,0 +1,5 @@
+git clone repo
+git add .
+git commit -m "guia de git"
+
+con git estatus veo el estado del repositorio
