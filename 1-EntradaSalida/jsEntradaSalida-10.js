@@ -5,4 +5,14 @@ en el cuadro de texto "RESULTADO"*/
 function mostrarAumento()
 {
 	
+	var	suImporte;	
+	var cuenta;
+
+
+	suImporte= document.getElementById('importe').value;
+	suImporte= parseInt(suImporte);
+
+	cuenta = suImporte / 0.25;
+
+	document.getElementById('resultado').value= cuenta;
 }
