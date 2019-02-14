@@ -17,10 +17,6 @@ function mostrar()
 */
 
 
-
-
-
-
 	var suEdad;
 
 	suEdad = document.getElementById('edad').value;
