@@ -2,9 +2,9 @@ function mostrar()
 {
 
 	var importe1;
-	var importe2 ;
-	var importe3 ;
-	var importe4 ;
+	var importe2;
+	var importe3;
+	var importe4;
 	var mayor;
 	var suma;
 	var elTotal;
@@ -19,7 +19,7 @@ function mostrar()
 	importe3 =parseInt(importe3);
 	importe4 =parseInt(importe4);
 
-//quien es mayor
+//quien es mayor    // REACERLO FOTO
 
 	if (importe1 > importe2) 
 	{
@@ -55,18 +55,15 @@ function mostrar()
 		{
 			elTotal = suma * 0.90
 		} else 
+		{
+			if ( suma > 50) //INSESARIO
 			{
-				if (suma < 100 && suma > 50) 
-					{
-						elTotal = suma * 0.95
-					} else 
-						{
-							if (suma < 50) 
-								{
-									elTotal = suma * 1.15	
-								}
-						}
+				elTotal = suma * 0.95
+			} else 
+			{
+					elTotal = suma * 1.15	
 			}
+		}
 
 
 	alert("la suma da " +suma+ " y el mayor es " + mayor + " y el total a pagar es de " + elTotal ); 
