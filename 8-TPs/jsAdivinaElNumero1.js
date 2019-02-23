@@ -14,13 +14,48 @@ function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
 	 
+
+	numeroSecreto =	Math.floor(Math.random() * 100) + 1;
 		//alert(numeroSecreto );
+
+	console.log(numeroSecreto);
+
+	contadorIntentos = 0;
 	
 
 }
 
 function verificar()
 {
-	
-	
+	var numeroIngresado;
+	numeroIngresado= numero.value;
+	console.log(numeroIngresado)
+
+	contadorIntentos = contadorIntentos + 1;
+
+	if (numeroIngresado == numeroSecreto) {
+
+		
+		if (contadorIntentos >= 3) 
+		{
+			mensaje =" sos un genio ";
+		} else 
+		{
+			mensaje= " fue pura suerte ";
+		}
+
+	} else 
+	{	
+		if (numeroIngresado > numeroSecreto) 
+		{
+			mensaje= "se paso";
+		} else {
+			mensaje= "el numero es mas grande";
+		}
+
+	}
+
+	intentos.value = contadorIntentos;
+	alert(mensaje);
 }
+

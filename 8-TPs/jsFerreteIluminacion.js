@@ -11,38 +11,64 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 function CalcularPrecio () 
 {
  	var precio;
- 	var marca;
+ 	var brutoAPagar;
  	var cantidadLamparitas;
+ 	var marca;
+ 	var porcentajeConDescuento;
+ 	var totalConDescuento;
+
+ 	cantidadLamparitas = document.getElementsByTagName('cantidad').value;
+ 	marca = document.getElementsByTagName('marca').value;
+
+ 	cantidadLamparitas = parseInt(cantidad);
+
+ 	totalPagar= cantidad * 35;
 
 
 
- 	if (cantidadLamparitas >= 6) 
- 	{
- 		precio = precio + 0.50; /* recisar calculo*/
-
-
- 	} else 
- 	{
- 		if (cantidadLamparitas == 5) 
- 		{
- 			if (marca == "ArgentinaLuz") 
- 				{
- 					precio= precio * 0.40;
- 				} else 
- 				{
- 					precio= precio * 0.30;
- 				}
-		} else 
+ 	switch(cantidad)
+ 	{	
+ 		case 5:
+ 		if (marca == "ArgentinaLuz")
  			{
- 				if () {} else {}
-
+ 				porcentajeConDescuento = 0.4;
+ 			} else 
+ 			{
+ 				porcentajeConDescuento = 0.3;
  			}
+ 		break
+ 		case 3:
+ 		if (marca == "ArgentinaLuz") 
+			{
+			porcentajeConDescuento = 0.15;
+			}
+			else 
+			{
+				if (marca == "FelipeLamparas") 
+				{
+				porcentajeConDescuento= 0.10;
+				}
+				else
+				{
+				 porcentajeConDescuento = 0.05;
+				}
+			}
+		break
+		case 4:
+		if (marca == "ArgentinaLuz" || marca == "FelipeLamparas") 
+ 			{
+ 				porcentajeConDescuento = 0.25;
+ 			}
+ 			 else 
+ 			{
+ 				porcentajeConDescuento = 0.20; 	
+ 			}		
+
 
  	}
 
 
 
- 	var precio= 35;
 
 
 
@@ -50,7 +76,76 @@ function CalcularPrecio ()
 
 
 
- 	alert("");
 
 
+
+
+
+
+
+/*
+ 	if (cantidadLamparitas >= 6) 
+ 	{
+ 		porcentajeConDescuento = 0.5; 
+ 	} else 
+ 	{
+ 		if (cantidadLamparitas == 5) 
+ 		{
+			if (marca == "ArgentinaLuz")   //un if dentro de un if es un and
+ 				{
+ 					porcentajeConDescuento = 0.4;
+ 				} else 
+ 				{
+ 					porcentajeConDescuento = 0.3;
+ 				}
+		} 
+		else 
+ 		{
+ 			if (cantidad == 4) 
+ 			{	
+ 				if (marca == "ArgentinaLuz" || marca == "FelipeLamparas") 
+ 					{
+ 								porcentajeConDescuento = 0.25;
+ 					}
+ 					 else 
+ 						{
+ 							porcentajeConDescuento = 0.20; 	
+ 						}
+ 						
+ 					else 
+ 					{
+						if (cantidad == 3) 
+						{
+							if (marca == "ArgentinaLuz") 
+							{
+									porcentajeConDescuento = 0.15;
+							}
+							else 
+							{
+								if (marca == "FelipeLamparas") 
+								{
+									porcentajeConDescuento= 0.10;
+								}
+								else 
+								{
+								 porcentajeConDescuento = 0.05;
+								}
+							}					
+ 						}
+ 					}
+
+ 	}
+
+ 	totalConDescuento = totalBruto - (totalBruto) *
+
+ 	if (totalConDescuento > 120) 
+ 	{
+ 		IIBB  = 
+ 	} else {}
+
+ 	document.getElementsByTagName('precioConDescuento').value =
+
+ 	//alert("");
+
+*/
 }
