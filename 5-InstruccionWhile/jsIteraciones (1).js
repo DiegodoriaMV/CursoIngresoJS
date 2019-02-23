@@ -12,6 +12,7 @@ function mostrar()
 		
 	}
 	
+	alert(contador);
 
 
 }//FIN DE LA FUNCIÓN
