@@ -12,7 +12,7 @@ function mostrarAumento()
 	suImporte= document.getElementById('importe').value;
 	suImporte= parseInt(suImporte);
 
-	cuenta = suImporte * 0.25;
+	cuenta = suImporte * 0.75;
 
 	document.getElementById('resultado').value= cuenta;
 }

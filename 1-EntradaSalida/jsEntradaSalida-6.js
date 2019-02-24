@@ -5,6 +5,7 @@ function sumar()
 {
 	var primerNumero;
 	var segundoNumero;
+	var suma;
 
 	primerNumero= document.getElementById('numeroUno').value;
 	segundoNumero= document.getElementById('numeroDos').value;
@@ -12,7 +13,10 @@ function sumar()
 	primerNumero= parseInt(primerNumero);
 	segundoNumero= parseInt(segundoNumero);
 
-	alert(primerNumero + segundoNumero);
+	suma = primerNumero + segundoNumero;
+
+
+	alert("La suma " + suma);
 
 
 
@@ -22,14 +26,6 @@ function sumar()
 
 
 
-/*no es recomendable
 
-
-	primerNumero =prompt(document.getElementById('numeroUno').value);
-	se =prompt(document.getElementById('numerosDos').value);
-
-	suma= num1 +
-
-*/
 }
 
