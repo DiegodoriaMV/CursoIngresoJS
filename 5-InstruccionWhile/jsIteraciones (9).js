@@ -1,33 +1,43 @@
 function mostrar()
 {
-
 	var contador=0;
-	// declarar variables
 	var numero;
 	var maximo;
 	var minimo;
 	var respuesta='si';
-	var flag = false;
+	var bandera = 0;
 
 	while(respuesta!='no')
 	{
 		numero = prompt("ingrese numero");
+		numero = parseInt(numero);
 
-
-
-		if (flag == false || numero > maximo)//si se evalua y si la primera da verdadera no se evalua la segunda
+		if (contador == 0) 
+		{
+			maximo =numero;
+			minimo =numero;
+			contador++;
+		}
+		else
+		{
+		if ( maximo < numero)//si se evalua y si la primera da verdadera no se evalua la segunda
 		{	
 			maximo = numero;
 			
 		}
-		if (flag == false || minimo < numero)
+		if (minimo > numero)
 		{	
-			minimo = numero
-			flag = true;
+			minimo = numero;
 		}
+		}
+		
+
+
+
+		respuesta = prompt("ingrese no para salir");
 	}
-document.getElementById('minimo').value = minimo;
-document.getElementById('maximo').value = maximo;
+	document.getElementById('minimo').value = minimo;
+	document.getElementById('maximo').value = maximo;
 
 
 
