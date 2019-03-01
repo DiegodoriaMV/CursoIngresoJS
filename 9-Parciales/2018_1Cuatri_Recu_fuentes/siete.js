@@ -23,16 +23,15 @@ function mostrar()
 
 	while(autosCont < 5)
 	{
-	velocidadKilo = prompt("ingrese la velocidad en kilómetros");
-	velocidadKilo = parseInt(velocidadKilo);
+		velocidadKilo = prompt("ingrese la velocidad en kilómetros");
+		velocidadKilo = parseInt(velocidadKilo);
 
 		while(velocidadKilo < 0 || velocidadKilo > 250)
 		{
 			alert("error es de 0 a 250");
 			velocidadKilo = prompt("reingrese la velocidad en kilómetros");
-
-
 		}
+
 
 	tipoDeCombustible = prompt("ingrese el tipo de combustible 's' para solido y 'l' para liquido");
 		while(tipoDeCombustible != "s" && tipoDeCombustible != "l")
@@ -41,7 +40,8 @@ function mostrar()
 			tipoDeCombustible = prompt("reingrese el tipo de combustible 's' para solido y 'l' para liquido");
 		}
 
-		while(contador == 0)
+
+		if(contador == 0)
 			{
 				velocidadBaja = velocidadKilo;
 				contador++;
@@ -58,7 +58,7 @@ function mostrar()
 			combustibleLMax++;
 		}
 		
-		while (contadorDos == 0)
+		if (contadorDos == 0)
 		{
 			combustibleSMax = velocidadKilo;
 			contadorDos ++;
