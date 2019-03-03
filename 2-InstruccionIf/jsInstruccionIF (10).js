@@ -8,9 +8,7 @@ function mostrar()
 		if (nota >= 9) 
 		{
 			mensaje ="exelente";
-		} else
-		{
-			if (nota >= 4 ) 
+		} else if (nota >= 4 ) 
 			{
 			 mensaje ="aprobo";
 
@@ -18,7 +16,7 @@ function mostrar()
 			{
 			mensaje = "suerte la proxima ";
 			}
-		}
+		
 
 alert("su nota es " +nota+ " y "+ mensaje);
 

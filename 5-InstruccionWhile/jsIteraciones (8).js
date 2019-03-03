@@ -5,19 +5,36 @@ function mostrar()
 	var positivo=0;
 	var negativo=1;
 	var contadorDeNotas;
+
+	var numero;
 	
 	
 	var respuesta='si';
 
 
-	while(respuesta != "no")
+	while(respuesta != "n")
 	{
-		 = prompt("ingrese numeros");
+		 numero = prompt("ingrese numeros");
+		  numero = parseInt(numero);
 
-		respuesta = prompt("quiere seguir sumando??")
+
+
+
+		//respuesta = prompt("quiere seguir sumando??") //texto predeterminado
 		 
-		 	= prompt("ingrese numeros");
+		 //numero	= prompt("ingrese numeros"); //texto predeterminado
+		
 
+		 if ( numero > 0) {
+		 	positivo = positivo + numero;
+		 }else
+		 {
+		 	negativo = negativo * numero;
+		 }
+
+
+
+		 	respuesta = prompt("para salir ingrese 'n' ");
 	}
 
 

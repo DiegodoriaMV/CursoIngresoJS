@@ -9,11 +9,8 @@ function mostrar()
 	eCivil = document.getElementById('estadoCivil').value;
 
 
-	if (suEdad <18  && eCivil!= "soltero" ) {/*esta mal no se puede agragar un if y no hacer nada*/
-		
-		eCivil == "divorciado" || eCivil == "casado"
-	} else {
-
+	if (suEdad <18  && eCivil == "Soltero" ) {/*esta no se puede agragar un if y no hacer nada*/
+		alert("es soltero y es menor de edad");	
 	}
 
 

@@ -7,6 +7,6 @@ function mostrar()
 
 	if ( suEdad >= 13 && suEdad <= 17) {
 
-		alert("voce so un adolecente");
+		alert("voce so uma adolecente");
 	}
 }//FIN DE LA FUNCIÓN

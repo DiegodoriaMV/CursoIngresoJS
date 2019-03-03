@@ -3,7 +3,7 @@ function mostrar()
 
 	var clave;
 	var intentos;
-	var flag = false;
+	var bandera = false;
 
 	intentos= 0;
 
@@ -16,13 +16,13 @@ function mostrar()
 
 			if (intentos == 3) 
 			{
-				flag = true;
+				bandera = true;
 				break;
 			}
 
 
 		}
-	if (flag == false) 
+	if (bandera == false) 
 	{
 		alert("bienvenido/a");
 	}

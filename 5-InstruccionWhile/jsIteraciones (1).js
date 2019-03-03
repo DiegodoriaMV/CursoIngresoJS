@@ -11,8 +11,6 @@ function mostrar()
 		console.log(contador);
 		
 	}
-	
-	alert(contador);
 
 
 }//FIN DE LA FUNCIÓN

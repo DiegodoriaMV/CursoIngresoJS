@@ -7,7 +7,7 @@ function mostrar()
 	var respuesta='si';
 	var bandera = 0;
 
-	while(respuesta!='no')
+	while(respuesta!='n')
 	{
 		numero = prompt("ingrese numero");
 		numero = parseInt(numero);
@@ -18,23 +18,21 @@ function mostrar()
 			minimo =numero;
 			contador++;
 		}
-		else
-		{
-		if ( maximo < numero)//si se evalua y si la primera da verdadera no se evalua la segunda
+		else if ( maximo > numero)//si se evalua y si la primera da verdadera no se evalua la segunda
 		{	
 			maximo = numero;
 			
 		}
-		if (minimo > numero)
+		if (minimo < numero)
 		{	
 			minimo = numero;
 		}
-		}
+		
 		
 
 
 
-		respuesta = prompt("ingrese no para salir");
+		respuesta = prompt("ingrese 'n' para salir");
 	}
 	document.getElementById('minimo').value = minimo;
 	document.getElementById('maximo').value = maximo;

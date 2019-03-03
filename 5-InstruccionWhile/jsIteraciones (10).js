@@ -3,6 +3,7 @@ function mostrar()
 	var numero;
 	var sumaNegativos;
 	var sumaPositvos;
+	var diferencia;
 
 	var contador=0;
  	
@@ -16,6 +17,10 @@ function mostrar()
 
 	var paresCont = 0;
 
+	var promedioPos;
+	var promedioNeg;
+
+
 	var respuesta="si";
 
 	while(respuesta!="n")
@@ -28,9 +33,7 @@ function mostrar()
 		{
 			ceroCont++;
 
-		} else 
-		{
-			if (numero < 0) 
+		} else if (numero < 0) 
 			{
 				sumaNegativos = sumaNegativos + numero;
 				negativosCont++;
@@ -42,28 +45,32 @@ function mostrar()
 
 			}
 
-		}
+
 
 		if (numero%2 == 0) 
 		{
 			paresCont++;
-		} else {}
-
-
-
-
-
-
+		}
 
 
 
 		respuesta = prompt("ingrese 'n' para salir");
 	}
-	console.log("SUMA DE POSIVOS " +sumaPositvos);
-	console.log("SUMA DE negativos " +sumaNegativos);
-	console.log("hay " +positivosCont+" POSIVOS")
-	console.log("hay " +negativosCont+" negativos")
-	console.log("hay " + ceroCont+ "ceros")
 
+	promedioNeg = sumaNegativos / negativosCont;
+	promedioPos = sumaPositvos / positivosCont;
+	diferencia =  sumaNegativos + sumaPositvos;
+
+
+
+	document.write("SUMA DE POSIVOS " +sumaPositvos);
+	document.write("<br>SUMA DE negativos " +sumaNegativos);
+	document.write("<br>hay " +positivosCont+" POSIVOS");
+	document.write("<br>hay " +negativosCont+" negativos");
+	document.write("<br>hay " + ceroCont+ " ceros");
+	document.write("<br>la cantidad de numeros pares es  " + paresCont);
+	document.write("<br>el promedio de los negativoses es " + promedioNeg);
+	document.write("<br>el promedio de los positivos es  " +promedioPos);
+	document.write("<br>la diferencia entre los positivos y negativos es  " + diferencia);
 
 }//FIN DE LA FUNCIÓN
